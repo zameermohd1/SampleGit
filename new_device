@@ -4,7 +4,7 @@ provider "aws" {
  secret_key = "+/q/nkgK8pTlqkACdiWdZa1UGkE6vqIXZjMlhcOt"
  }
 
-resource "aws_instance" "int1" {
+resource "aws_instance" "Ansible1" {
  ami = "ami-01cc34ab2709337aa"
  instance_type = "t2.micro"
  tags = {
