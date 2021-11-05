@@ -1,1 +1,13 @@
+provider "aws" {
+ region = "us-east-1"
+ access_key = "AKIA4BICD5HWJZCVUB7C"
+ secret_key = "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"
+ }
 
+resource "aws_instance" "int1" {
+ ami = "ami-01cc34ab2709337aa"
+ instance_type = "t2.micro"
+ tags = {
+  name = "Terraform"
+ }
+}
